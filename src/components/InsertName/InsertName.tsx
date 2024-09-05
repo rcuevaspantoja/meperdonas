@@ -17,10 +17,19 @@ const InsertName = ({ isOpen, onClose }: ModalProps) => {
 
   const handleSubmit = () => {
     if (nombre.trim()) {
-      router.push(`/${nombre}`); // Redirige a la ruta ingresada
+      // Normalizar el nombre, eliminando acentos y caracteres especiales
+      const normalizedNombre = nombre
+        .normalize('NFD') // Descompone los caracteres acentuados
+        .replace(/[\u0300-\u036f]/g, '') // Remueve los diacríticos (acentos, tildes)
+        .replace(/ñ/g, 'n') // Reemplazar 'ñ' por 'n'
+        .replace(/Ñ/g, 'N'); // Reemplazar 'Ñ' por 'N'
+  
+      // Redirige a la ruta con el nombre normalizado
+      router.push(`/${normalizedNombre}`);
       onClose(); // Cierra el modal
     }
   };
+  
 
   if (!isOpen) return null; // No renderizar si el modal no está abierto
   const handleShare = async () => {
