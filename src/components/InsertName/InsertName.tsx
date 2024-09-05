@@ -27,7 +27,7 @@ const InsertName = ({ isOpen, onClose }: ModalProps) => {
     if (navigator.share) {
       try {
         await navigator.share({
-          title: 'Me perdonas?',
+          title: `Hola ${nombre}, me perdonas? `,
           text: `Hola ${nombre}, me perdonas? `,
           url: window.location.href+nombre, // URL actual + nombre
         });

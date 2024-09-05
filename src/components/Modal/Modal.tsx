@@ -24,7 +24,7 @@ const Modal = ({ isOpen, onClose }: ModalProps) => {
   return (
     isOpen ? (
       <div className="fixed inset-0 flex items-center justify-center z-50 bg-black bg-opacity-50">
-        <div className="bg-white p-8 rounded-lg shadow-lg flex flex-col items-center justify-center">
+        <div className="bg-white p-8 rounded-lg shadow-lg flex flex-col items-center justify-center m-4">
           {loading && (
             <div className="absolute inset-0 flex justify-center items-center">
               <div className="loader ease-linear rounded-full border-4 border-t-4 border-gray-200 h-12 w-12"></div>
