@@ -54,9 +54,9 @@ const InsertName = ({ isOpen, onClose }: ModalProps) => {
   return (
     <div className="fixed inset-0 flex items-center justify-center z-50 bg-black bg-opacity-50">
       <div className="bg-white p-4 rounded-lg shadow-lg flex flex-col items-center justify-center border-2 border-black">
-        <span>Nombre de él o ella </span>
+        <span className="text-2xl">Nombre de él o ella </span>
         <input
-          className=" border-blue-300 rounded-md my-2 border-2"
+          className=" border-rose-500 rounded-md my-2 border-2 p-2"
           value={nombre}
           onChange={handleInputChange} // Maneja el cambio en el input
         ></input>
