@@ -4,7 +4,7 @@ import Footer from "@/components/Footer/Footer";
 
 export const metadata: Metadata = {
   title: "¿me perdonas?",
-  description: "Aplicación para que puedas pedir perdón. Basta con escribir el nombre y compartirlo con la persona que quieras disculparte",
+  description: "Perdón por lo que hice, me gustaría recibir tu perdón. Gracias <3",
 };
 
 export default function RootLayout({
