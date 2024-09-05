@@ -19,7 +19,7 @@ function MePerdonas() {
   }, [name]);
 
   return (
-    <div className="flex flex-col items-center justify-center bg-white border-black border-2 p-5 rounded-md m-2">
+    <div className="flex flex-col items-center justify-center bg-white border-black border-2 rounded-md">
       <Gif /> 
       <InsertName isOpen={isModalOpen} onClose={closeModal} />
       <div className="text-4xl">
