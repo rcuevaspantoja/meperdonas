@@ -1,6 +1,7 @@
 import Background from "@/components/Background/Background";
 import MePerdonas from "@/components/MePerdonas/MePerdonas";
 
+export const runtime = 'edge';
 
 export default function Home() {
 
